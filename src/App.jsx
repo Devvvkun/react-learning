@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Counter from './Counter'
+import Intro from './Intro'
 import './index.css'
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
     <>
     <div className='h-screen w-screen bg-zinc-500 p-5 flex justify-center items-center flex-col ' > 
      <Counter/>
-    </div>
+     <Intro data={ {name: "Himanshu Singh" , age: 21 , topic : "Learning React from Scrath"} } role = "Frontend Developer and Teacher"/>
+      </div>
     </>
   )
 }
