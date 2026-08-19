@@ -4,6 +4,8 @@ import Intro from './Intro'
 import './index.css'
 import ColorRender from './ColorRender'
 import StudentDashboard from './StudentDashboard'
+import products from './ProductData'
+import ProductTable from './ProductTable'
 function App() {
   const student = {
     id : 101,
@@ -20,7 +22,8 @@ function App() {
      <Intro data={ {name: "Himanshu Singh" , age: 21 , topic : "Learning React from Scratch"} } role = "Frontend Developer and Teacher"/>
      <ColorRender />
       </div> */}
-    <StudentDashboard data ={student}  />
+    {/* <StudentDashboard data ={student}  /> */}
+     <ProductTable  data = {products}/>
     </>
   )
 }
