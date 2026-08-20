@@ -6,6 +6,7 @@ import ColorRender from './ColorRender'
 import StudentDashboard from './StudentDashboard'
 import products from './ProductData'
 import ProductTable from './ProductTable'
+import FormHandeller from './FormHandeller'
 function App() {
   const student = {
     id : 101,
@@ -23,7 +24,8 @@ function App() {
      <ColorRender />
       </div> */}
     {/* <StudentDashboard data ={student}  /> */}
-     <ProductTable  data = {products}/>
+     {/* <ProductTable  data = {products}/> */}
+     <FormHandeller />
     </>
   )
 }
