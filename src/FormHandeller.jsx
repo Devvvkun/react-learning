@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './index.css'
 const FormHandeller = () => {
 
@@ -11,7 +11,7 @@ const [number, setnumber] = useState("")
 const [date, setdate] = useState("")
 const [address, setaddress] = useState("")
 const [file, setfile] = useState("")
-const [check, setcheck] = useState("")
+const [check, setcheck] = useState(false)
 
 const Handeller= (e) =>{
         e.preventDefault()
@@ -47,8 +47,7 @@ const Handeller= (e) =>{
         <input type="file" id='img' value={file} onChange={(e)=> setfile(e.target.value)}/> 
         <br/>
         <label htmlFor='check'>CheckBox : </label>
-        <input type="checkbox" id='check' value={check} onChange={(e)=>setcheck(e.target.value)}/> 
-        {console.log(check)}
+        <input type="checkbox" id='check' value={check} onChange={(e)=>setcheck(e.target.checked)}/> 
         <br/>
             <input type="submit" value="Submit" />
     </form>    
@@ -61,7 +60,7 @@ const Handeller= (e) =>{
         <p>Address: {address}</p>
         <p>UserName: {uname}</p>
         <p>Date: {date}</p>
-        <p>Check: {check}</p>
+        <p>Check: {check == true ? "Checked" : "Unchecked"}</p>
     </div>
     </div>
   )
