@@ -7,6 +7,7 @@ import StudentDashboard from './StudentDashboard'
 import products from './ProductData'
 import ProductTable from './ProductTable'
 import FormHandeller from './FormHandeller'
+import HandleLike from './HandleLike'
 function App() {
   const student = {
     id : 101,
@@ -25,7 +26,8 @@ function App() {
       </div> */}
     {/* <StudentDashboard data ={student}  /> */}
      {/* <ProductTable  data = {products}/> */}
-     <FormHandeller />
+     {/* <FormHandeller /> */}
+     <HandleLike />
     </>
   )
 }
